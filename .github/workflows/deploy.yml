@@ -20,11 +20,15 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install dependencies
-        run: npm ci
 
-      - name: Build site
-        run: npm run build
+      - name: Instalar pnpm
+        run: npm install -g pnpm
+
+      - name: Instalar dependencias
+        run: pnpm install --frozen-lockfile
+
+      - name: Construir sitio
+        run: pnpm run build
 
       - name: Crear archivo .nojekyll
         run: touch ./dist/.nojekyll
