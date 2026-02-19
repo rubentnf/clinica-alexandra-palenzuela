@@ -5,8 +5,8 @@ excerpt: La citología vaginal o prueba de Papanicolaou es un estudio sencillo y
 image: ~/assets/images/posts/citologia.webp
 category: Servicios
 tags:
- - Ginecología
- - Salud de la mujer
+  - Ginecología
+  - Salud de la mujer
 metadata:
   canonical: https://astrowind.vercel.app/astrowind-template-in-depth
 ---

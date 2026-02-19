@@ -5,13 +5,13 @@ excerpt: El ecosistema vaginal, formado principalmente por lactobacilos, es clav
 image: ~/assets/images/posts/farmacogenetica.webp
 category: Servicios
 tags:
- - Cáncer
- - Ginecología
+  - Cáncer
+  - Ginecología
 metadata:
   canonical: https://astrowind.vercel.app/astrowind-template-in-depth
 ---
 
-# El riesgo de tomar TAM OXI FENO* sin conocer tu metabolismo
+# El riesgo de tomar TAM OXI FENO\* sin conocer tu metabolismo
 
 ¿Sabías que muchas mujeres que toman Tam oxi feno como tratamiento complementario para el cáncer de mama no se benefician y es como si estuvieran tomando agua?
 
@@ -45,5 +45,3 @@ En el recuadro de nuestra paciente se relaciona el principio activo (tam oxi fen
 - En el recuadro de nuestra paciente puedes ver que es PM para Tam oxi feno
 
 **PM = Poor Metabolizer** (reflejado con recuadros de color rojo en el informe). Los dos alelos carecen de actividad, por lo que la metabolización del medicamento será prácticamente nula. Tanto si se trata de un fármaco como de un pro-fármaco, la recomendación es **NO utilizar** este medicamento en este paciente y buscar un medicamento alternativo que no se metabolice por esta vía.
-
-

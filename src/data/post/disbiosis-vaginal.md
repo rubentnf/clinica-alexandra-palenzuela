@@ -5,8 +5,8 @@ excerpt: El ecosistema vaginal, formado principalmente por lactobacilos, es clav
 image: ~/assets/images/posts/disbiosis-vaginal.webp
 category: Servicios
 tags:
- - Cáncer
- - Ginecología
+  - Cáncer
+  - Ginecología
 metadata:
   canonical: https://astrowind.vercel.app/astrowind-template-in-depth
 ---
@@ -68,4 +68,3 @@ Una vez recibida en Casa de la Luz, aproximadamente 15 días después, la ginec�
         }
       </style>
     </Fragment>
-

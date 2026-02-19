@@ -5,8 +5,8 @@ excerpt: El ecosistema vaginal, formado principalmente por lactobacilos, es clav
 image: ~/assets/images/posts/deficit-dao.webp
 category: Servicios
 tags:
- - Cáncer
- - Ginecología
+  - Cáncer
+  - Ginecología
 metadata:
   canonical: https://astrowind.vercel.app/astrowind-template-in-depth
 ---
@@ -66,5 +66,3 @@ Este test realiza un genotipado de alta sensibilidad de las variantes genéticas
 4. Las citas son inmediatas y el tiempo de espera es reducido.
 5. El lugar es tranquilo rodeado de naturaleza y con fácil aparcamiento.
 6. El trato cercano y amable en un centro dedicado a la Salud Integrativa.
-
-

@@ -5,8 +5,8 @@ excerpt: El ecosistema vaginal, formado principalmente por lactobacilos, es clav
 image: ~/assets/images/posts/test-disbiosis.webp
 category: Servicios
 tags:
- - Servicios
- - Blog
+  - Servicios
+  - Blog
 metadata:
   canonical: https://astrowind.vercel.app/astrowind-template-in-depth
 ---
@@ -29,11 +29,11 @@ Se recomienda que 15 días antes de la prueba, evitar la ingesta de antibiótico
 
 # Perfiles
 
-- ***Parásitos:*** 12 parásitos (*). Descartar parasitosis y seguimiento.
-- ***Básico:*** tipificación básica y seguimiento de un tratamiento de microbiota básica. ***Parásitos*** + Calprotectina, sangre oculta color, consistencia, pH, digestión...
-- ***Extendido:*** tipificación paciente inicial de la microbiota y actividad metabólica. Incluye el ***Básico*** más: SCFA, enzimas, IgAs, elastasa pancreática y antitripsina alfal.
-- ***Plus:*** tipificación paciente completa y para la sensibilidad alimentaria. Incluye el ***Extendido*** más: metales, Zonulina, EPX, O-Defensina 2, Lactoferrina y Composición.
-- ***Max:*** para permeabilidad, inflamación, tóxicos, digestión de alimentos. Incluye el ***Plus*** más: anti-tripsina alfa1, zonulina, lactoferrina, Betadefasina2 y Ac. Biliares.
+- **_Parásitos:_** 12 parásitos (\*). Descartar parasitosis y seguimiento.
+- **_Básico:_** tipificación básica y seguimiento de un tratamiento de microbiota básica. **_Parásitos_** + Calprotectina, sangre oculta color, consistencia, pH, digestión...
+- **_Extendido:_** tipificación paciente inicial de la microbiota y actividad metabólica. Incluye el **_Básico_** más: SCFA, enzimas, IgAs, elastasa pancreática y antitripsina alfal.
+- **_Plus:_** tipificación paciente completa y para la sensibilidad alimentaria. Incluye el **_Extendido_** más: metales, Zonulina, EPX, O-Defensina 2, Lactoferrina y Composición.
+- **_Max:_** para permeabilidad, inflamación, tóxicos, digestión de alimentos. Incluye el **_Plus_** más: anti-tripsina alfa1, zonulina, lactoferrina, Betadefasina2 y Ac. Biliares.
 
 Microbiota Básica:
 

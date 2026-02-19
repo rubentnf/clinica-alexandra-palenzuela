@@ -4,7 +4,8 @@ layout: '~/layouts/MarkdownLayout.astro'
 ---
 
 <!-- _Last updated_: January 06, 2023 -->
-# Aviso Legal 
+
+# Aviso Legal
 
 El presente sitio web ha sido diseñado por Casa de La Luz Salud Integrativa, SL, para dar a conocer y permitir el acceso general de todos los usuarios a la información, actividades, productos y servicios diversos, propios o de terceros, ofertados.
 
@@ -110,13 +111,13 @@ La infracción de cualquiera de los citados derehos puede constituir una vulnera
 
 ### 10. Medidas de seguridad
 
-El titular ha adoptado los niveles de seguridad de protección de los Datos Personales legalmente requeridos, y procuran instalar aquellos otros medios y medidas técnicas adicionales a su alcance para evitar la pérdida, mal uso, alteración, acceso no autorizado y robo de los Datos Personales facilitados. El titular no será responsable de posibles daños o perjuicios que se pudieran derivar de interferencias, omisiones, interrupciones, virus informáticos, averías telefónicas o desconexiones en el funcionamiento operativo de este sistema electrónico, motivadas por causas ajenas al titular; de retrasos o bloqueos en el uso del presente sistema electrónico causados por deficiencias o sobrecargas de líneas telefónicas o sobrecargas en el Centro de Procesos de Datos, en el sistema de Internet o en otros sistemas electrónicos, así como de daños que puedan ser causados por terceras personas mediante intromisiones ilegítimas fuera del control del titular. No obstante, el usuario debe ser consciente de que las medidas de seguridad no son inexpugnables. 
+El titular ha adoptado los niveles de seguridad de protección de los Datos Personales legalmente requeridos, y procuran instalar aquellos otros medios y medidas técnicas adicionales a su alcance para evitar la pérdida, mal uso, alteración, acceso no autorizado y robo de los Datos Personales facilitados. El titular no será responsable de posibles daños o perjuicios que se pudieran derivar de interferencias, omisiones, interrupciones, virus informáticos, averías telefónicas o desconexiones en el funcionamiento operativo de este sistema electrónico, motivadas por causas ajenas al titular; de retrasos o bloqueos en el uso del presente sistema electrónico causados por deficiencias o sobrecargas de líneas telefónicas o sobrecargas en el Centro de Procesos de Datos, en el sistema de Internet o en otros sistemas electrónicos, así como de daños que puedan ser causados por terceras personas mediante intromisiones ilegítimas fuera del control del titular. No obstante, el usuario debe ser consciente de que las medidas de seguridad no son inexpugnables.
 
 ### 11. Protección de Datos de carácter personal
 
 Durante la navegación a través de la web es posible que se soliciten datos de carácter personal a través de diferentes formularios web dispuestos al efecto o por correo electrónico. Dichos datos formarán parte de los pertinentes ficheros en función de la finalidad determinada y concreta que motiva el recabo de los mismos, la cual le será informada en el momento de recabar los datos personales. De esta forma, la información particular de cada tratamiento de datos se aportará junto a los formularios web o correo electrónico, siendo común a todos ellos el responsable del fichero: Casa de La Luz Salud Integrativa, SL.
 
-De acuerdo con los derechos que le confiere la normativa vigente en protección de datos, podrá ejercer los derechos de acceso, rectificación, limitación de tratamiento, supresión, portabilidad y oposición al tratamiento de sus datos de carácter personal, así como del consentimiento prestado para el tratamiento de los mismos, dirigiendo su petición a Casa de La Luz Salud Integrativa, SL REF: Protección de Datos con domicilio en Av. Trinidad, 15B. 2ºD - 38204, San Cristóbal de La Laguna o al correo electrónico info@casadelaluztenerife.com 
+De acuerdo con los derechos que le confiere la normativa vigente en protección de datos, podrá ejercer los derechos de acceso, rectificación, limitación de tratamiento, supresión, portabilidad y oposición al tratamiento de sus datos de carácter personal, así como del consentimiento prestado para el tratamiento de los mismos, dirigiendo su petición a Casa de La Luz Salud Integrativa, SL REF: Protección de Datos con domicilio en Av. Trinidad, 15B. 2ºD - 38204, San Cristóbal de La Laguna o al correo electrónico info@casadelaluztenerife.com
 
 Cualquier persona tiene derecho a obtener confirmación sobre si en Casa de La Luz Salud Integrativa, SL estamos tratando datos personales que les conciernan, o no. Las personas interesadas tienen derecho al acceso de sus datos personales, a solicitar la rectificación de los datos inexactos o, en su caso, solicitar su supresión cuando, entre otros motivos, los datos ya no sean necesarios para los fines que fueron recogidos.
 
@@ -126,7 +127,7 @@ En determinadas circunstancias, y por motivos relacionados con su situación par
 
 Parte del sitio web puede albergar contenidos publicitarios o estar patrocinado. Los anunciantes y patrocinadores son los únicos responsables de asegurarse que el material remitido para su inclusión en el sitio web cumple con las leyes que en cada caso puedan ser de aplicación. **Casa de La Luz Salud Integrativa, SL** no será responsable de cualquier error, inexactitud o irregularidad que puedan contener los contenidos publicitarios o de los patrocinadores.
 
-En todo caso, para interponer cualquier reclamación relacionada con los contenidos publicitarios insertados en este sitio web pueden dirigirse a la siguiente dirección de correo electrónico: info@casadelaluztenerife.com 
+En todo caso, para interponer cualquier reclamación relacionada con los contenidos publicitarios insertados en este sitio web pueden dirigirse a la siguiente dirección de correo electrónico: info@casadelaluztenerife.com
 
 ### 13. Limitación de responsabilidad
 
@@ -146,6 +147,6 @@ Para cuantas cuestiones se susciten sobre la interpretación, aplicación y cump
 
 ### 16. Legislación aplicable
 
-El Aviso Legal se rige por la ley española. 
+El Aviso Legal se rige por la ley española.
 
 Reservados todos los derechos de autor por las leyes y tratados internacionales de propiedad intelectual. Queda expresamente prohibida su copia, reproducción o difusión, total o parcial, por cualquier medio.

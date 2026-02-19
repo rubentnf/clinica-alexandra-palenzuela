@@ -5,8 +5,8 @@ excerpt: El ecosistema vaginal, formado principalmente por lactobacilos, es clav
 image: ~/assets/images/posts/disbiosis.webp
 category: Servicios
 tags:
- - Cáncer
- - Ginecología
+  - Cáncer
+  - Ginecología
 metadata:
   canonical: https://astrowind.vercel.app/astrowind-template-in-depth
 ---
@@ -23,7 +23,7 @@ En nuestra consulta de Ginecología Integrativa, la Dra Palenzuela te realizará
 
 ### Interpretación
 
-Se observa la presencia de un biofilm patológico debido a la presencia de Ureaplasma parvum favorecido por el déficit de crecimiento de especies de Lactobacillus. En concreto el *crispatus y gasseri*.
+Se observa la presencia de un biofilm patológico debido a la presencia de Ureaplasma parvum favorecido por el déficit de crecimiento de especies de Lactobacillus. En concreto el _crispatus y gasseri_.
 
 - La presencia de especies patógenas puede ocasionar vaginosis, infecciones de repetición o complicaciones durante el embarazo. En este caso se recomienda el uso de un tratamiento antibiótico para tratar el sobrecrecimiento de Ureaplasma parvum.
 - Valorar la ingesta de probióticos vía oral con especies de Lactobacillus específicas junto con el uso de cápsulas vaginales que contengan los Lactobacillus deficitarios. La duración del tratamiento dependerá de los niveles de Lactobacillus a recuperar. Para mujeres que desean quedarse embarazadas se sugiere alargar el tratamiento para evitar complicaciones durante el embarazo.

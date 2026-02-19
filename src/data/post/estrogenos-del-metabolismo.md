@@ -5,9 +5,9 @@ excerpt: El ecosistema vaginal, formado principalmente por lactobacilos, es clav
 image: ~/assets/images/posts/estrogenos.webp
 category: Servicios
 tags:
- - Servicios
- - Blog
- - Ginecología
+  - Servicios
+  - Blog
+  - Ginecología
 metadata:
   canonical: https://astrowind.vercel.app/astrowind-template-in-depth
 ---
@@ -49,4 +49,3 @@ El análisis está especialmente indicado en mujeres:
 Nos hemos encontrado con unos resultados que sirven de ejemplo de lo que supone el antes y después del tratamiento con la Dra. Alexandra Palenzuela. Misma paciente con un intervalo de 7 meses entre el primer estudio del metabolismo de estrógenos y el segundo. Paciente que ha seguido a rajatabla las indicaciones de la Dra. Como una imágen vale más que mil palabras, observen las diferencias:
 
 [![Sample Image](https://casadelaluztenerife.com/wp-content/uploads/2020/07/TratamientoEstr%C3%B3genos-1024x385.jpg)](https://example.com)
-

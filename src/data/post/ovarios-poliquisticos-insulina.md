@@ -5,8 +5,8 @@ excerpt: El ecosistema vaginal, formado principalmente por lactobacilos, es clav
 image: ~/assets/images/posts/ovarios-poliquisticos-insulina.webp
 category: Servicios
 tags:
- - Menopausia
- - Ginecología
+  - Menopausia
+  - Ginecología
 metadata:
   canonical: https://astrowind.vercel.app/astrowind-template-in-depth
 ---

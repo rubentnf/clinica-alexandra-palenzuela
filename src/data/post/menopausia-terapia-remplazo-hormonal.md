@@ -5,8 +5,8 @@ excerpt: El ecosistema vaginal, formado principalmente por lactobacilos, es clav
 image: ~/assets/images/posts/menopausia-reemplazo-hormonal.webp
 category: Servicios
 tags:
- - Menopausia
- - Ginecología
+  - Menopausia
+  - Ginecología
 metadata:
   canonical: https://astrowind.vercel.app/astrowind-template-in-depth
 ---
@@ -64,7 +64,7 @@ De la misma forma, una vez iniciada la Terapia de Reemplazo Hormonal es necesari
 
 **La Terapia de Reemplazo Hormonal es personalizada para cada paciente. No podemos dar el mismo tratamiento a todas las mujeres.**
 
-Es recomendable hacer una etapa détox previa al inicio del tratamiento hormonal, así como un estudio de metabolismo de los estrógenos porque debido a la genética cada mujer detoxificará de diferente manera los estrógenos.**
+Es recomendable hacer una etapa détox previa al inicio del tratamiento hormonal, así como un estudio de metabolismo de los estrógenos porque debido a la genética cada mujer detoxificará de diferente manera los estrógenos.\*\*
 
 ## ¿Cómo y por qué la Terapia de Reemplazo Hormonal mejora la vida de las pacientes?
 

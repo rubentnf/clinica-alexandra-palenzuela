@@ -5,11 +5,11 @@ excerpt: El ecosistema vaginal, formado principalmente por lactobacilos, es clav
 image: ~/assets/images/posts/ecosistema-vaginal.webp
 category: Blog
 tags:
- - Candidiasis
- - Disbiosis
- - Ginecología
- - Salud de la mujer
- - Vaginosis
+  - Candidiasis
+  - Disbiosis
+  - Ginecología
+  - Salud de la mujer
+  - Vaginosis
 metadata:
   canonical: https://astrowind.vercel.app/astrowind-template-in-depth
 ---
@@ -22,12 +22,12 @@ Quiero destacar la importancia de evitar que las mujeres usen de forma indiscrim
 
 ## El ecosistema vaginal - ¿Quién está ahí?
 
-Las bacterias predominantes del ecosistema vaginal pertenecen al grupo de los *lactobacillus*. Estas son unas bacterias que tienen varias funciones para mantener el sistema "en forma" e impedir el crecimiento de patógenos.
+Las bacterias predominantes del ecosistema vaginal pertenecen al grupo de los _lactobacillus_. Estas son unas bacterias que tienen varias funciones para mantener el sistema "en forma" e impedir el crecimiento de patógenos.
 Además de estos lactobacilos viven varios tipos de bacterias y hongos. En perfecto equilibrio gracias a unas condiciones específicas de pH, situación hormonal, estado de la mucosa, sistema inmune de la mujer, contacto con gérmenes a través de relaciones sexuales, tipo de alimentación, exposición a tóxicos o fármacos, etc.
 
 ## Eubiosis vs Disbiosis
 
-El estado de equilibrio del ecosistema se conoce como estado de *eubiosis* y el de desequilibrio, como *disbiosis*. Dentro de las disbiosis vaginales las más frecuentes son la vaginosis y la candidiasis.
+El estado de equilibrio del ecosistema se conoce como estado de _eubiosis_ y el de desequilibrio, como _disbiosis_. Dentro de las disbiosis vaginales las más frecuentes son la vaginosis y la candidiasis.
 
 El equilibrio del ecosistema vaginal es el principal factor de defensa frente a infecciones genitales. Este ecosistema, como es lógico, se ve condicionado por el estado de salud del intestino ya que la **microbiota intestinal** es el principal reservorio de la **microbiota vaginal**. Es por eso que es imposible estudiarlo sin tener en cuenta la salud intestinal. En consecuencia, un especialista que atienda la salud femenina debe conocer la microbiota intestinal y **atender a la par ambos ecosistemas** si no es así, tarde o temprano, la vagina volverá a recaer con los desórdenes que no se han solucionado desde la base.
 
@@ -41,7 +41,7 @@ Es importante conocer los factores modificables que afectan nuestra microbiota p
 
 Tendríamos sospecha de infección, si sintiéramos síntomas como picor genital, cambio en las características de nuestro flujo vaginal (cantidad, color, olor, consistencia), inflamación vulvar, molestias en las relaciones sexuales (ardor en paredes vaginales, dolora la penetración, sangrado,...), lesiones vulvares (úlceras, verrugas,...), etc.
 
-Hay que decir que cuando en el resultado de una citología o de un exudado vaginal nos informen de *cándidas* o *gardnerellas* no necesariamente implica que tengamos infección por estos gérmenes. Estas no pertenecen al grupo de patógenos sino al de la microbiota que vive habitualmente en nuestras vaginas pero en perfecto equilibrio con el resto de bacterias.
+Hay que decir que cuando en el resultado de una citología o de un exudado vaginal nos informen de _cándidas_ o _gardnerellas_ no necesariamente implica que tengamos infección por estos gérmenes. Estas no pertenecen al grupo de patógenos sino al de la microbiota que vive habitualmente en nuestras vaginas pero en perfecto equilibrio con el resto de bacterias.
 
 Para terminar, cabe destacar que el estudio del ecosistema nos puede aportar la siguiente información:
 

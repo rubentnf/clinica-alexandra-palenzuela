@@ -5,8 +5,8 @@ excerpt: El ecosistema vaginal, formado principalmente por lactobacilos, es clav
 image: ~/assets/images/posts/clitoris.webp
 category: Servicios
 tags:
- - Menopausia
- - Ginecología
+  - Menopausia
+  - Ginecología
 metadata:
   canonical: https://astrowind.vercel.app/astrowind-template-in-depth
 ---
@@ -31,7 +31,7 @@ La excitación sexual de la mujer se manifiesta por el entumecimiento del clíto
 
 Cuando se alcanza el grado máximo de excitación, se produce una intensa vasocongestión en el tercio externo de la vagina y los labios menores ganan tumescencia. Como consecuencia, se estrecha la luz del introito vaginal y el clítoris se retrae contra la sínfisis del pubis. Esto es lo que se conoce como PLATAFORMA ORGÁSMICA.
 
-El neurotransmisor más importante para la vasocongestión pelviana es el *péptido intestinal vasoactivo* (VIP). Secundariamente a la excitación se libera el óxido nítrico (ON) que es el mediador primario de la tumefacción clitorídea. Este ON, produce un aumento del GMP cíclico que estimula la relajación del músculo liso arteriolar logrando así la mayor congestión sanguínea. Los estrógenos regulan la expresión de la enzima óxido- nítrico sintetasa, estimulan la producción de VIP, y mantienen la elasticidad vaginal permitiendo así una correcta lubricación.
+El neurotransmisor más importante para la vasocongestión pelviana es el _péptido intestinal vasoactivo_ (VIP). Secundariamente a la excitación se libera el óxido nítrico (ON) que es el mediador primario de la tumefacción clitorídea. Este ON, produce un aumento del GMP cíclico que estimula la relajación del músculo liso arteriolar logrando así la mayor congestión sanguínea. Los estrógenos regulan la expresión de la enzima óxido- nítrico sintetasa, estimulan la producción de VIP, y mantienen la elasticidad vaginal permitiendo así una correcta lubricación.
 
 La plataforma orgásmica se expande hacia dentro y se estrecha en su interior acogiendo y sujetando el cuerpo del pene. Esta plataforma orgásmica está muy inervada por terminaciones sensitivas táctiles y vibratorias y se acomoda a cualquier anchura del pene. De esta forma, las sensaciones producidas por la estimulación y el roce en su interior, son muy placenteras. Debido a este mecanismo de estrechamiento, el ancho de la erección del pene es menos importante para la estimulación sexual de la mujer de lo que generalmente se cree.
 

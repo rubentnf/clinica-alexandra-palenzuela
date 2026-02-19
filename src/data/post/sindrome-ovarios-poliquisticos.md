@@ -5,8 +5,8 @@ excerpt: El ecosistema vaginal, formado principalmente por lactobacilos, es clav
 image: ~/assets/images/posts/sindrome-ovarios-poliquisticos.webp
 category: Servicios
 tags:
- - Menopausia
- - Ginecología
+  - Menopausia
+  - Ginecología
 metadata:
   canonical: https://astrowind.vercel.app/astrowind-template-in-depth
 ---
@@ -16,7 +16,7 @@ metadata:
 Conoce la opción que te ofrece la ginecología integrativa.
 Artículo escrito por nuestra ginecóloga, la Dra. Alexandra Palenzuela.
 
-El *Síndrome de Ovarios Poliquísticos* es el trastorno endocrino-metabólico más prevalente entre la población femenina en edad fértil (supone entre el 5 -10% de esta población). No se conocen muy bien sus causas pero se asocia con una predisposición genética o simplemente malos hábitos alimentarios que finalmente, provocarán estos desórdenes hormonales.
+El _Síndrome de Ovarios Poliquísticos_ es el trastorno endocrino-metabólico más prevalente entre la población femenina en edad fértil (supone entre el 5 -10% de esta población). No se conocen muy bien sus causas pero se asocia con una predisposición genética o simplemente malos hábitos alimentarios que finalmente, provocarán estos desórdenes hormonales.
 
 Se ha propuesto que el SOP podría comenzar en la vida intrauterina. Estudios realizados en hijas de mujeres con este síndrome han mostrado un perfil metabólico adverso similar al que se ve en el SOP en estas niñas en relación a la exposición prenatal a los andrógenos. También se ha visto una relación directa del IMC en la infancia y pubertad con mayores niveles de andrógenos en sangre.
 

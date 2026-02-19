@@ -5,8 +5,8 @@ excerpt: El ecosistema vaginal, formado principalmente por lactobacilos, es clav
 image: ~/assets/images/posts/revision-ginecologica.webp
 category: Servicios
 tags:
- - Menopausia
- - Ginecología
+  - Menopausia
+  - Ginecología
 metadata:
   canonical: https://astrowind.vercel.app/astrowind-template-in-depth
 ---
@@ -17,9 +17,9 @@ En esta entrada vamos a intentar exponer qué se va a encontrar una mujer cuando
 
 Lo primero de todo, puntualidad. En la medida de lo posible y salvo fuerza mayor, si la mujer está citada a una hora, entrará en consulta a esa hora. La recibirán con una sonrisa, y le pedirán que rellene la ficha de alta con la ley de protección de datos (LOPD) para poder gestionar sus datos.
 
-Una vez realizada el alta, la mujer pasará, a solas o con el acompañante que elija, a la consulta de Ginecología donde le atenderá  la Dra. Alexandra Palenzuela. (poner enlace a su bio)
+Una vez realizada el alta, la mujer pasará, a solas o con el acompañante que elija, a la consulta de Ginecología donde le atenderá la Dra. Alexandra Palenzuela. (poner enlace a su bio)
 
-Una vez dentro encontrará a una mujer,  atenta y empática, informada,  con una larga experiencia y totalmente actualizada ya que rebosa de pasión por la medicina y sobre todo por la Salud.
+Una vez dentro encontrará a una mujer, atenta y empática, informada, con una larga experiencia y totalmente actualizada ya que rebosa de pasión por la medicina y sobre todo por la Salud.
 
 ## Revisión Ginecológica: el acto médico
 
@@ -33,9 +33,9 @@ La primera parte es la anamnesis, que resumido es la información que se recopil
 
 Lo siguiente es algo que no se le suele dar la importancia que realmente tiene, ya que nos condiciona la salud en muchas de sus facetas:
 
-- ***La Epigenética*** (que desarrollaremos en un próximo artículo), en el que contamos con el **ambiente donde desarrolla su vida** (tipo de trabajo, estrés crónico, exposición a tóxicos, …) **y los hábitos de vida** (alimentación, si practica ejercicio físico, tabaquismo, toma habitual de medicamentos  como píldoras anticonceptivas, tranquilizantes, anti-inflamatorios,…
-- Invitar a la mujer a hablar  sobre su **respuesta sexual** y atender los desórdenes  tratando de solucionarlos.
-- Indagar sobre cómo está su **sistema inmune** ya que de él depende la vigilancia frente al cáncer, enfermedades autoinmunes, riesgo de infecciones,…  y promover pautas para mantenerlo  en “forma”.
+- **_La Epigenética_** (que desarrollaremos en un próximo artículo), en el que contamos con el **ambiente donde desarrolla su vida** (tipo de trabajo, estrés crónico, exposición a tóxicos, …) **y los hábitos de vida** (alimentación, si practica ejercicio físico, tabaquismo, toma habitual de medicamentos como píldoras anticonceptivas, tranquilizantes, anti-inflamatorios,…
+- Invitar a la mujer a hablar sobre su **respuesta sexual** y atender los desórdenes tratando de solucionarlos.
+- Indagar sobre cómo está su **sistema inmune** ya que de él depende la vigilancia frente al cáncer, enfermedades autoinmunes, riesgo de infecciones,… y promover pautas para mantenerlo en “forma”.
 - Los **desórdenes hormonales** para evitar complicaciones a largo plazo p. ej el exceso de estrógenos mantenido aumenta el riesgo de cánceres hormono-dependientes, la elevación de andrógenos nos provoca aumento de vello y acné, la insulina elevada nos conduce a obesidad y diabetes,…
 
 ## Fase de exploración
@@ -44,7 +44,7 @@ Una vez recabados todos estos datos, fundamentales para la práctica médica, co
 
 ### Exploración general:
 
-- Valorar composición corporal: p.ej. un exceso de tejido adiposo  puede causar  inflamación, resistencia a la insulina, trastornos hormonales, infertilidad, un pérdida de músculo acarreará riesgo de osteoporosis y disminución de metabolismo basal…
+- Valorar composición corporal: p.ej. un exceso de tejido adiposo puede causar inflamación, resistencia a la insulina, trastornos hormonales, infertilidad, un pérdida de músculo acarreará riesgo de osteoporosis y disminución de metabolismo basal…
 - Distribución de la grasa corporal nos orienta a trastornos metabólicos como resistencia a la insulina, lipoinflamación, …
 - Poco tejido muscular que puede llevar a osteopenia y osteoporosis
 - Exceso de vello en áreas típicamente masculinas (hirsutismo), acné, acantosis nigricans…

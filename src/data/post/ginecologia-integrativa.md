@@ -5,9 +5,9 @@ excerpt: El ecosistema vaginal, formado principalmente por lactobacilos, es clav
 image: ~/assets/images/posts/ginecologia-integrativa.webp
 category: Servicios
 tags:
- - Servicios
- - Blog
- - Ginecología
+  - Servicios
+  - Blog
+  - Ginecología
 metadata:
   canonical: https://astrowind.vercel.app/astrowind-template-in-depth
 ---
