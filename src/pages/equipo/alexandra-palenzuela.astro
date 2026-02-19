@@ -1,0 +1,212 @@
+---
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import Content from '~/components/widgets/Content.astro';
+import Footer from '~/components/widgets/Footer.astro';
+import Header from '~/components/widgets/Header.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/Layout.astro';
+import { footerData } from '~/navigation';
+
+const metadata = {
+  title: 'Alexandra Palenzuela - Clínica Alexandra Palenzuela',
+};
+---
+
+<Layout metadata={metadata}>
+  <Header
+    showLogo={false}
+    links={[
+      { text: 'Inicio', href: '/' },
+      { text: 'Sobre mí', href: '#about' },
+      { text: 'Experiencia Laboral', href: '#experience' },
+      { text: 'Educación', href: '#education' },
+      { text: 'Blog', href: '#blog' },
+    ]}
+    actions={[
+      {
+        text: 'Pedir cita',
+        href: 'https://portal.clinicaenlanube.com/clinicas/925/cita_peticiones/new',
+      },
+    ]}
+    isSticky
+    showToggleTheme
+    position="center"
+  />
+  <slot />
+
+  <!-- Hero2 Widget ******************* -->
+  <Hero id="hero" title="Alexandra Palenzuela" tagline="Ginecología y Médica Integrativa" />
+
+  <!-- Content Widget **************** -->
+  <Content
+    id="about"
+    image={{
+      src: '~/assets/images/alexandra.webp',
+      alt: 'Imagen Alexandra Palenzuela',
+      loading: 'eager',
+    }}
+  >
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Sobre mí</h2>
+
+      <p>
+        Desde muy temprana edad, entorno a los 6 años, despertó en ella la vocación de sanar y el deseo de ayudar a las
+        personas a mantenerse lo más sanas posibles.
+      </p>
+      <br />
+      <p>
+        Con los años esta inclinación la llevó a motivarse por cursar estudios de Medicina. Los realizó en la
+        Universidad de La Laguna. Durante las prácticas de estudiante, al ver el primer parto decidió dedicarse a la
+        práctica de la Ginecología y Obstetricia.
+      </p>
+      <br />
+      <p>
+        Actualmente desempeña su labor como Ginecóloga y Médico Integrativo en Casa de la Luz – Salud Integrativa, junto
+        con un equipo multidisciplinar de profesionales siendo la Directora Médica de dicho centro.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+  <Steps
+    id="experience"
+    title="Experiencia laboral"
+    items={[
+      {
+        title:
+          'Médica Interna Residente <br /> <span class="font-normal">Hospital Universitario Nuestra Señora de La Candelaria</span>',
+        description: `Collaborate with clients to understand design requirements and objectives. <br /> Develop branding solutions, including logos, color palettes, and brand guidelines. <br /> Design marketing materials such as brochures, posters, and digital assets. <br /> Create visually appealing user interfaces for websites and applications.`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Servicio de Oncología Ginecológica <br /> <span class="font-normal">Hospital Universitario de Bellvitge</span>',
+        description: `Assisted senior designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Comité de Oncología Ginecológica <br /> <span class="font-normal">Instituto Catalá de Oncología (ICO)</span>',
+        description: ``,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Control de la diabetes gestacional <br /> <span class="font-normal">Hospital de Vall`s de Hebrón</span>',
+        description: ``,
+        icon: 'tabler:briefcase',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl' }}
+  />
+
+  <!-- Steps Widget ****************** -->
+  <Steps
+    id="education"
+    title="Educación"
+    items={[
+      {
+        title: `Miembro de varias sociedades científicas <br /> <span class="font-normal">SEGO (Sociedad Española de Ginecología y Obstetricia)- SENMO (Sociedad Española de Nutrición y Medicina Ortomolecular)- SESMI (Sociedad Española de Salud y Medicina Integrativa)- AEMI (Sociedad Española de Microinmunoterapia)</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Formación en Microinmunoterapia <br /> <span class="font-normal">Dra. Josepa Rigau</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Formación en Oncología Integrativa (200 h lectivas) <br /> <span class="font-normal">Onmints</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Master en Educación, Terapia Sexual y Género <br /> <span class="font-normal">Universidad de La Laguna</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Médica Especialista en Obstetricia y Ginecología <br /> <span class="font-normal">Dirección General de Universidades</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Licenciada en Medicina y Cirugía <br /> <span class="font-normal">Universidad de La Laguna</span>`,
+        icon: 'tabler:school',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl' }}
+  />
+
+  <!-- Testimonials Widget *********** -->
+  <Testimonials
+    title="Client testimonials"
+    subtitle="Discover what clients have to say about their experiences working with me."
+    testimonials={[
+      {
+        testimonial: `She took our vague concept and turned it into a visual masterpiece that perfectly aligned with our goals. Her attention to detail and ability to translate ideas into compelling visuals exceeded our expectations.`,
+        name: 'Mark Thompson',
+        job: 'Creative director',
+        image: {
+          src: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Mark Thompson Image',
+        },
+      },
+      {
+        testimonial: `She transformed our brand identity with her creative finesse, capturing our essence in every element. Her dedication and talent truly shine through her work.`,
+        name: 'Emily Martinez',
+        job: 'CEO',
+        image: {
+          src: 'https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=772&q=80',
+          alt: 'Emily Martinez Image',
+        },
+      },
+      {
+        testimonial: `She has an uncanny ability to communicate emotions and stories. She crafted a logo for our NGO that not only represents our cause but also evokes empathy. Her professionalism and commitment make her a designer of exceptional caliber.`,
+        name: 'Laura Simmons',
+        job: 'Founder of an NGO',
+        image: {
+          src: 'https://images.unsplash.com/photo-1554727242-741c14fa561c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Laura Simmons Image',
+        },
+      },
+      {
+        testimonial: `We entrusted Sarah with revamping our website's user interface, and the results were astounding. Her intuitive design sense enhanced user experience, leading to a significant increase in engagement. She's a designer who truly understands the synergy of aesthetics and functionality.`,
+        name: 'Alex Foster',
+        job: 'Director of web services',
+        image: {
+          src: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Alex Foster Image',
+        },
+      },
+      {
+        testimonial: `She took our vision and elevated it beyond imagination. Her ability to capture brand essence and translate it into design is nothing short of remarkable. Working with her has been an inspiring journey.`,
+        name: 'Jessica Collins',
+        job: 'Product Manager',
+        image: {
+          src: 'https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=778&q=80',
+          alt: 'Jessica Collins Image',
+        },
+      },
+      {
+        testimonial: `Her ability to transform concepts into captivating visuals is nothing short of extraordinary. She took our event poster idea and turned it into a visual masterpiece that perfectly captured the essence of our festival. Sarah's dedication, creativity, and knack for delivering beyond expectations make her an invaluable asset to any project.`,
+        name: 'Michael Carter',
+        job: 'Event Coordinator',
+        image: {
+          src: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Michael Carter Image',
+        },
+      },
+    ]}
+  />
+
+  <!-- BlogLatestPost Widget **************** -->
+
+  <BlogLatestPosts id="blog" title="Descubre más información en nuestro blog">
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+  <Footer {...footerData} />
+</Layout>
