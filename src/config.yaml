@@ -65,8 +65,8 @@ apps:
 
 analytics:
   vendors:
-    googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
+    umami:
+      id: ebf4c50c-48f7-4a38-bb4c-9856c204cf2b
 
 ui:
   theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"

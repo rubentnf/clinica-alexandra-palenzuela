@@ -71,8 +71,9 @@ export interface AppBlogConfig {
 }
 export interface AnalyticsConfig {
   vendors: {
-    googleAnalytics: {
+    umami: {
       id?: string;
+      src?: string;
       partytown?: boolean;
     };
   };
@@ -183,8 +184,9 @@ const getUI = (config: Config) => {
 const getAnalytics = (config: Config) => {
   const _default = {
     vendors: {
-      googleAnalytics: {
+      umami: {
         id: undefined,
+        src: 'https://cloud.umami.is/script.js',
         partytown: true,
       },
     },
