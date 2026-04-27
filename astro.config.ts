@@ -62,7 +62,7 @@ export default defineConfig({
       },
       Image: false,
       JavaScript: true,
-      SVG: false,
+      SVG: true,
       Logger: 1,
     }),
 
@@ -72,7 +72,7 @@ export default defineConfig({
   ],
 
   image: {
-    domains: ['cdn.pixabay.com'],
+    domains: ['cdn.pixabay.com', 'images.unsplash.com'],
   },
 
   markdown: {

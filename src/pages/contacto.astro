@@ -1,7 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
-import ContactUs from '~/components/widgets/Contact.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
@@ -12,35 +11,7 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="Contact" title="Let's Connect!" />
-
-  <ContactUs
-    id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
-    inputs={[
-      {
-        type: 'text',
-        name: 'name',
-        label: 'Name',
-      },
-      {
-        type: 'email',
-        name: 'email',
-        label: 'Email',
-      },
-    ]}
-    textarea={{
-      label: 'Message',
-    }}
-    disclaimer={{
-      label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
-    }}
-    description="Our support team typically responds within 24 business hours."
-  />
-
-  <!-- Mapa eliminado por seguridad: clave de API expuesta. Añade aquí tu propio iframe seguro si lo necesitas. -->
+  <HeroText tagline="Contacto" title="Let's Connect!" />
 
   <!-- Features2 Widget ************** -->
 
@@ -64,4 +35,19 @@ const metadata = {
       },
     ]}
   />
+
+  <div class="text-center mt-12 -mb-8">
+    <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">¿Dónde estamos?</h2>
+  </div>
+
+  <div class="flex justify-center my-12 px-4 sm:px-6">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.7739157568276!2d-16.318557123681284!3d28.486354575744894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cddd07cc7ce5%3A0x2dec7fde3243a45!2sCl%C3%ADnica%20Alexandra%20Gine%20%7C%20Tenerife!5e0!3m2!1ses!2ses!4v1776955944239!5m2!1ses!2ses"
+      width="100%"
+      height="450"
+      style="border:0; border-radius: 16px; max-width: 1100px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
 </Layout>

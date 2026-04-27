@@ -11,7 +11,7 @@ metadata:
   title:
     default: Clínica Alexandra Palenzuela
     template: '%s — Clínica Alexandra Palenzuela'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "Clínica de Ginecología y Salud Integrativa liderada por la Dra. Alexandra Palenzuela. Cuidado integral para la salud de la mujer."
   robots:
     index: true
     follow: true

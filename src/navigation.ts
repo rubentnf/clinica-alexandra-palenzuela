@@ -27,31 +27,6 @@ export const headerData = {
         },
       ],
     },
-    /* {
-      text: 'Pages',
-      links: [
-        {
-          text: 'Services',
-          href: getPermalink('/services'),
-        },
-        {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
-      ],
-    }, */
     {
       text: 'Blog',
       href: getBlogPermalink(),
@@ -73,39 +48,24 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Servicios',
-      links: [
-        { text: 'Ginecología', href: '#' },
-        { text: 'Nutrición', href: '#' },
-        { text: 'Fisioterapia', href: '#' },
-        { text: 'Psicología', href: '#' },
-        { text: 'Medicina Integrativa', href: '#' },
-        { text: 'Recursos', href: '#' },
-      ],
-    },
-    {
       title: 'La Clínica',
       links: [
-        { text: 'Equipo', href: '#' },
-        { text: 'Blog', href: '#' },
+        { text: 'Equipo', href: getPermalink('/') + '#equipo' },
+        { text: 'Blog', href: getBlogPermalink() },
       ],
     },
     {
       title: 'Legal',
       links: [
-        { text: 'Términos de uso', href: '#' },
-        { text: 'Política de privacidad', href: '#' },
-        { text: 'Aviso legal', href: '#' },
+        { text: 'Términos de uso', href: getPermalink('/terms') },
+        { text: 'Política de privacidad', href: getPermalink('/privacy') },
       ],
     },
   ],
   secondaryLinks: [],
   socialLinks: [
-    /*  { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' }, */
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/clinicaalexandragine/' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/casadelaluztenerife/' },
-    /* { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') }, */
-    /*  { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/arthelokyo/astrowind' }, */
   ],
   footNote: `
     Hecho con <span aria-hidden="true">❤️</span> por <a class="text-blue-600 underline dark:text-muted" href="https://www.linkedin.com/in/rubenafonsodev/" target="_blank"> Rubén Afonso</a> · Todos los derechos reservados.
