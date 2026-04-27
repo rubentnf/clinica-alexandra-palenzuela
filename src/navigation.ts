@@ -8,24 +8,7 @@ export const headerData = {
     },
     {
       text: 'Equipo',
-      links: [
-        {
-          text: 'Alexandra Palenzuela',
-          href: getPermalink('/equipo/alexandra-palenzuela'),
-        },
-        {
-          text: 'Rita Morales Hernández',
-          href: getPermalink('/equipo/rita-morales-hernandez'),
-        },
-        {
-          text: 'Clara Militto Val',
-          href: getPermalink('/equipo/clara-militto-val'),
-        },
-        {
-          text: 'Nerea Peñalver Vargas',
-          href: getPermalink('/equipo/nerea-penalver-vargas'),
-        },
-      ],
+      href: getPermalink('/equipo'),
     },
     {
       text: 'Blog',
@@ -50,7 +33,7 @@ export const footerData = {
     {
       title: 'La Clínica',
       links: [
-        { text: 'Equipo', href: getPermalink('/') + '#equipo' },
+        { text: 'Equipo', href: getPermalink('/equipo') },
         { text: 'Blog', href: getBlogPermalink() },
       ],
     },

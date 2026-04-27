@@ -1,36 +1,16 @@
 ---
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import Content from '~/components/widgets/Content.astro';
-import Footer from '~/components/widgets/Footer.astro';
-import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Steps from '~/components/widgets/Steps.astro';
-import Layout from '~/layouts/Layout.astro';
-import { headerData, footerData } from '~/navigation';
+import PageLayout from '~/layouts/PageLayout.astro';
 
 const metadata = {
   title: 'Alexandra Palenzuela - Clínica Alexandra Palenzuela',
 };
 ---
 
-<Layout metadata={metadata}>
-  <Header
-    links={[
-      ...headerData.links,
-      { text: 'Sobre mí', href: '#about' },
-      { text: 'Trayectoria', href: '#experience' },
-    ]}
-    actions={[
-      {
-        text: 'Pedir cita',
-        href: 'https://portal.clinicaenlanube.com/clinicas/925/cita_peticiones/new',
-      },
-    ]}
-    isSticky
-    showToggleTheme
-    position="center"
-  />
-
+<PageLayout metadata={metadata}>
   <!-- Hero2 Widget ******************* -->
   <Hero id="hero" title="Alexandra Palenzuela" tagline="Ginecología y Médica Integrativa" />
 
@@ -134,7 +114,6 @@ const metadata = {
     classes={{ container: 'max-w-3xl' }}
   />
 
-
   <!-- BlogLatestPost Widget **************** -->
 
   <BlogLatestPosts id="blog" title="Descubre más información en nuestro blog">
@@ -142,5 +121,4 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </BlogLatestPosts>
-  <Footer {...footerData} />
-</Layout>
+</PageLayout>

@@ -1,32 +1,16 @@
 ---
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import Content from '~/components/widgets/Content.astro';
-import Footer from '~/components/widgets/Footer.astro';
-import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Steps from '~/components/widgets/Steps.astro';
-import Layout from '~/layouts/Layout.astro';
-import { headerData, footerData } from '~/navigation';
+import PageLayout from '~/layouts/PageLayout.astro';
 
 const metadata = {
   title: 'Rita Morales Hernández - Clínica Alexandra Palenzuela',
 };
 ---
 
-<Layout metadata={metadata}>
-  <Header
-    links={[...headerData.links, { text: 'Sobre mí', href: '#about' }, { text: 'Trayectoria', href: '#experience' }]}
-    actions={[
-      {
-        text: 'Pedir cita',
-        href: 'https://portal.clinicaenlanube.com/clinicas/925/cita_peticiones/new',
-      },
-    ]}
-    isSticky
-    showToggleTheme
-    position="center"
-  />
-
+<PageLayout metadata={metadata}>
   <!-- Hero2 Widget ******************* -->
   <Hero id="hero" title="Rita Morales" tagline="Nutricionista" />
 
@@ -52,21 +36,6 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
-  <!-- Experiencia Laboral Widget ****************** -->
-  <!--  <Steps
-    id="experience"
-    title="Experiencia laboral"
-    items={[
-      {
-        title:
-          'Control de la diabetes gestacional <br /> <span class="font-normal">Hospital de Vall`s de Hebrón</span> <br /> <span class="text-sm font-normal">2018 - 2021</span>',
-        description: ``,
-        icon: 'tabler:briefcase',
-      },
-    ]}
-    classes={{ container: 'max-w-3xl' }}
-  /> -->
 
   <!-- Steps Widget ****************** -->
   <Steps
@@ -96,5 +65,4 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </BlogLatestPosts>
-  <Footer {...footerData} />
-</Layout>
+</PageLayout>

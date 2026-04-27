@@ -69,4 +69,4 @@ analytics:
       id: ebf4c50c-48f7-4a38-bb4c-9856c204cf2b
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'light' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
