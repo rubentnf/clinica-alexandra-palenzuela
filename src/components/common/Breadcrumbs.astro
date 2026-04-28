@@ -1,18 +1,21 @@
 ---
 import { Icon } from 'astro-icon/components';
-import { getPermalink } from '~/utils/permalinks';
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '~/i18n/utils';
 
 const { path = Astro.url.pathname } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const p = useTranslatedPath(lang);
 
-const segments = path.split('/').filter((s) => s !== '');
+const segments = path.split('/').filter((s) => s !== '' && s !== 'en' && s !== 'de');
 const breadcrumbs = segments.map((segment, index) => {
-  const href = getPermalink('/' + segments.slice(0, index + 1).join('/'));
+  const href = p('/' + segments.slice(0, index + 1).join('/'));
   let label = segment.charAt(0).toUpperCase() + segment.slice(1).replace(/-/g, ' ');
 
-  // Custom labels
-  if (segment === 'equipo') label = 'Equipo';
-  if (segment === 'blog') label = 'Blog';
-  if (segment === 'contacto') label = 'Contacto';
+  // Custom labels (translated)
+  if (segment === 'equipo') label = t('nav.equipo');
+  if (segment === 'blog') label = t('nav.blog');
+  if (segment === 'contacto') label = t('nav.contacto');
 
   return { label, href };
 });
@@ -21,9 +24,9 @@ const breadcrumbs = segments.map((segment, index) => {
 <nav class="flex px-4 py-2 text-gray-500 dark:text-slate-400 text-sm overflow-x-auto whitespace-nowrap" aria-label="Breadcrumb">
   <ol class="inline-flex items-center space-x-1 md:space-x-3">
     <li class="inline-flex items-center">
-      <a href={getPermalink('/')} class="inline-flex items-center hover:text-primary dark:hover:text-white transition-colors">
+      <a href={p('/')} class="inline-flex items-center hover:text-primary dark:hover:text-white transition-colors">
         <Icon name="tabler:home" class="w-4 h-4 mr-1.5" />
-        Inicio
+        {t('nav.inicio')}
       </a>
     </li>
     {

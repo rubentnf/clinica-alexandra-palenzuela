@@ -4,44 +4,43 @@ import HeroText from '~/components/widgets/HeroText.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
-  title: 'Contact',
+  title: 'Contact - Alexandra Palenzuela Clinic',
 };
 ---
 
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline='<span style="color: #EB9C9B">Contacto</span>' title="Estamos aquí para ayudarte" />
+  <HeroText tagline="Contact" title="Contact Us" />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Métodos de contacto y ubicación"
+    title="Contact Methods and Location"
     items={[
       {
-        title: 'Teléfono',
+        title: 'Phone',
         description: '644 470 520',
         icon: 'tabler:phone',
         link: 'tel:644470520',
       },
       {
-        title: 'Correo',
+        title: 'Email',
         description: 'info@casadelaluztenerife.com',
         icon: 'tabler:mail',
         link: 'mailto:info@casadelaluztenerife.com',
       },
       {
-        title: 'Ubicación',
+        title: 'Location',
         description: 'Av. Trinidad, 15 Bloque B. Piso 2º Dcha',
         icon: 'tabler:map-pin',
         link: 'https://www.google.com/maps/search/?api=1&query=Clínica+Alexandra+Gine+Tenerife',
       },
     ]}
-    classes={{ items: { icon: 'text-[#EB9C9B]' } }}
   />
 
   <div class="text-center mt-12 -mb-8">
-    <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">¿Dónde estamos?</h2>
+    <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Where are we?</h2>
   </div>
 
   <div class="flex justify-center my-12 px-4 sm:px-6">

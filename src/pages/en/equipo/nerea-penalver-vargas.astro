@@ -1,0 +1,78 @@
+---
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import Content from '~/components/widgets/Content.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import PageLayout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Nerea Peñalver Vargas - Alexandra Palenzuela Clinic',
+};
+---
+
+<PageLayout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+  <Hero id="hero" title="Nerea Peñalver Vargas" tagline='<span style="color: #EB9C9B">Obstetrics and Gynecology</span>' />
+
+  <!-- Content Widget **************** -->
+  <Content
+    id="about"
+    image={{
+      src: '~/assets/images/nerea.webp',
+      alt: 'Nerea Peñalver Vargas Image',
+      loading: 'eager',
+    }}
+  >
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
+
+      <p>
+        Physician specialized in Obstetrics and Gynecology, with an extensive dedication to pregnancy tracking and prenatal advice. Her commitment is to offer medical excellence, based on scientific evidence and respect for women's decisions at each stage of motherhood.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+  <Steps
+    id="experience"
+    title="Work Experience"
+    items={[
+      {
+        title:
+          'Medical Specialist in Obstetrics and Gynecology <br /> <span class="font-normal">University Hospital Nuestra Señora de La Candelaria</span>',
+        description: 'From July 2021 to the present. Specialized in pregnancy tracking and prenatal advice.',
+        icon: 'tabler:briefcase',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl', items: { icon: 'text-[#EB9C9B] border-[#EB9C9B]' } }}
+  />
+
+  <!-- Steps Widget ****************** -->
+  <Steps
+    id="education"
+    title="Education"
+    items={[
+      {
+        title: 'Degree in Medicine',
+        description: 'Rey Juan Carlos University of Madrid',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Medical Specialist in Obstetrics and Gynecology',
+        icon: 'tabler:school',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl', items: { icon: 'text-[#EB9C9B] border-[#EB9C9B]' } }}
+  />
+
+  <!-- BlogLatestPost Widget **************** -->
+  <BlogLatestPosts id="blog" title="Discover more information on our blog">
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</PageLayout>

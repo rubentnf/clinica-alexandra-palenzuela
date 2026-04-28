@@ -1,0 +1,85 @@
+---
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import Content from '~/components/widgets/Content.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import PageLayout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Clara Militto Val - Klinik Alexandra Palenzuela',
+};
+---
+
+<PageLayout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+  <Hero id="hero" title="Clara Militto Val" tagline='<span style="color: #EB9C9B">Physiotherapeutin</span>' />
+
+  <!-- Content Widget **************** -->
+  <Content
+    id="about"
+    image={{
+      src: '~/assets/images/clara.webp',
+      alt: 'Clara Militto Val Bild',
+      loading: 'eager',
+    }}
+  >
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Über mich</h2>
+
+      <p>
+        Physiotherapeutin, die sich der Genesung und dem Wohlbefinden ihrer Patienten verschrieben hat und spezialisierte Techniken anwendet, um die Lebensqualität durch Bewegung und manuelle Therapie zu verbessern.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+  <Steps
+    id="experience"
+    title="Berufserfahrung"
+    items={[
+      {
+        title: 'Physiotherapie-Hausbesuchsdienst',
+        description: `Wir bieten Physiotherapie-Dienste zu Hause an, um Komfort und personalisierte Betreuung zu gewährleisten.`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title: 'LAE Physiotherapie-Klinik',
+        description: `In unserer Physiotherapie-Klinik widmen wir uns der Verbesserung von Gesundheit und Wohlbefinden.`,
+        icon: 'tabler:briefcase',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl', items: { icon: 'text-[#EB9C9B] border-[#EB9C9B]' } }}
+  />
+
+  <!-- Steps Widget ****************** -->
+  <Steps
+    id="education"
+    title="Ausbildung"
+    items={[
+      {
+        title: 'Interne LAE-Schulung <br /> <span class="font-normal">LAE Physiotherapie-Klinik</span>',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Monographien',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Studium der Physiotherapie <br /> <span class="font-normal">Universität von La Laguna</span>',
+        icon: 'tabler:school',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl', items: { icon: 'text-[#EB9C9B] border-[#EB9C9B]' } }}
+  />
+
+  <!-- BlogLatestPost Widget **************** -->
+  <BlogLatestPosts id="blog" title="Entdecken Sie weitere Informationen in unserem Blog">
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</PageLayout>

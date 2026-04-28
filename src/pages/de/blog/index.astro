@@ -1,0 +1,21 @@
+---
+import { findLatestPosts } from '~/utils/blog';
+import Layout from '~/layouts/PageLayout.astro';
+import BlogList from '~/components/blog/List.astro';
+import Headline from '~/components/blog/Headline.astro';
+
+const posts = await findLatestPosts({ count: 10 });
+
+const metadata = {
+  title: 'Blog - Klinik Alexandra Palenzuela',
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
+    <Headline subtitle="Blog mit interessanten Artikeln über Gynäkologie, Frauengesundheit usw.">
+      Der Blog
+    </Headline>
+    <BlogList posts={posts} />
+  </section>
+</Layout>

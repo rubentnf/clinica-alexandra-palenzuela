@@ -18,6 +18,14 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
   output: 'static',
 
+  i18n: {
+    defaultLocale: 'es',
+    locales: ['es', 'en', 'de'],
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
+
   integrations: [
     tailwind({
       applyBaseStyles: false,

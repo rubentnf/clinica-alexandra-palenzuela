@@ -1,0 +1,86 @@
+---
+import HeroText from '~/components/widgets/HeroText.astro';
+import PageLayout from '~/layouts/PageLayout.astro';
+import { getPermalink } from '~/utils/permalinks';
+import Image from '~/components/common/Image.astro';
+import Button from '~/components/ui/Button.astro';
+
+const metadata = {
+  title: 'Our Team - Alexandra Palenzuela Clinic',
+};
+
+const team = [
+  {
+    name: 'Alexandra Palenzuela',
+    role: 'Gynecology and Integrative Physician',
+    image: {
+      src: '~/assets/images/alexandra.webp',
+      alt: 'Alexandra Palenzuela',
+    },
+    href: getPermalink('/en/equipo/alexandra-palenzuela'),
+  },
+  {
+    name: 'Rita Morales',
+    role: 'Nutritionist',
+    image: {
+      src: '~/assets/images/rita.webp',
+      alt: 'Rita Morales',
+    },
+    href: getPermalink('/en/equipo/rita-morales-hernandez'),
+  },
+  {
+    name: 'Clara Militto Val',
+    role: 'Physiotherapist',
+    image: {
+      src: '~/assets/images/clara.webp',
+      alt: 'Clara Militto Val',
+    },
+    href: getPermalink('/en/equipo/clara-militto-val'),
+  },
+  {
+    name: 'Nerea Peñalver Vargas',
+    role: 'Obstetrics and Gynecology',
+    image: {
+      src: '~/assets/images/nerea.webp',
+      alt: 'Nerea Peñalver Vargas',
+    },
+    href: getPermalink('/en/equipo/nerea-penalver-vargas'),
+  },
+];
+---
+
+<PageLayout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+  <HeroText
+    tagline='<span style="color: #EB9C9B">Get to know us</span>'
+    title="Our Team"
+    subtitle="A multidisciplinary team committed to your health and integral well-being."
+  />
+
+  <section class="relative max-w-7xl mx-auto px-4 sm:px-6 mb-20">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      {
+        team.map((member) => (
+          <div class="flex flex-col items-center p-6 rounded-lg shadow-lg dark:shadow-none dark:border dark:border-slate-800 bg-white dark:bg-slate-900 transition hover:shadow-xl">
+            <div class="relative w-48 h-48 mb-6 overflow-hidden rounded-full border-4" style="border-color: #EB9C9B">
+              <Image
+                src={member.image.src}
+                alt={member.image.alt}
+                class="object-cover w-full h-full"
+                width={200}
+                height={200}
+              />
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-center">{member.name}</h3>
+            <p class="text-muted dark:text-slate-400 mb-6 text-center h-12 flex items-center justify-center italic">
+              {member.role}
+            </p>
+            <Button href={member.href} class="w-full text-sm">
+              View profile
+            </Button>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</PageLayout>
