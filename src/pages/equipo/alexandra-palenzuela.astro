@@ -12,7 +12,7 @@ const metadata = {
 
 <PageLayout metadata={metadata}>
   <!-- Hero2 Widget ******************* -->
-  <Hero id="hero" title="Alexandra Palenzuela" tagline="Ginecología y Médica Integrativa" />
+  <Hero id="hero" title="Alexandra Palenzuela" tagline='<span style="color: #EB9C9B">Ginecología y Médica Integrativa</span>' />
 
   <!-- Content Widget **************** -->
   <Content
@@ -78,7 +78,7 @@ const metadata = {
         icon: 'tabler:briefcase',
       },
     ]}
-    classes={{ container: 'max-w-3xl' }}
+    classes={{ container: 'max-w-3xl', items: { icon: 'text-[#EB9C9B] border-[#EB9C9B]' } }}
   />
 
   <!-- Steps Widget ****************** -->
@@ -111,7 +111,7 @@ const metadata = {
         icon: 'tabler:school',
       },
     ]}
-    classes={{ container: 'max-w-3xl' }}
+    classes={{ container: 'max-w-3xl', items: { icon: 'text-[#EB9C9B] border-[#EB9C9B]' } }}
   />
 
   <!-- BlogLatestPost Widget **************** -->

@@ -11,8 +11,8 @@ const metadata = {
 ---
 
 <PageLayout metadata={metadata}>
-  <!-- Hero2 Widget ******************* -->
-  <Hero id="hero" title="Nerea Peñalver Vargas" tagline="Fisioterapeuta" />
+  <!-- Hero Widget ******************* -->
+  <Hero id="hero" title="Nerea Peñalver Vargas" tagline='<span style="color: #EB9C9B">Obstetricia y Ginecología</span>' />
 
   <!-- Content Widget **************** -->
   <Content
@@ -27,8 +27,9 @@ const metadata = {
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Sobre mí</h2>
 
       <p>
-        Fisioterapeuta dedicada al tratamiento integral del paciente, especializada en la prevención y rehabilitación de
-        lesiones para promover una vida activa y saludable.
+        Médica especializada en Obstetricia y Ginecología, con una amplia dedicación al seguimiento de embarazos y el
+        asesoramiento prenatal. Su compromiso es ofrecer una atención médica de excelencia, basada en la evidencia
+        científica y en el respeto a las decisiones de la mujer en cada etapa de su maternidad.
       </p>
     </Fragment>
 
@@ -43,12 +44,13 @@ const metadata = {
     title="Experiencia laboral"
     items={[
       {
-        title: 'Fisioterapeuta',
-        description: `Información sobre experiencia laboral próximamente.`,
+        title:
+          'Médica Especialista en Obstetricia y Ginecología <br /> <span class="font-normal">Hospital Universitario Nuestra Señora de La Candelaria</span>',
+        description: 'Desde julio de 2021 hasta la actualidad. Especializada en el control de embarazos y asesoramiento prenatal.',
         icon: 'tabler:briefcase',
       },
     ]}
-    classes={{ container: 'max-w-3xl' }}
+    classes={{ container: 'max-w-3xl', items: { icon: 'text-[#EB9C9B] border-[#EB9C9B]' } }}
   />
 
   <!-- Steps Widget ****************** -->
@@ -57,15 +59,19 @@ const metadata = {
     title="Educación"
     items={[
       {
-        title: 'Grado en Fisioterapia',
+        title: 'Graduada en Medicina',
+        description: 'Universidad Rey Juan Carlos de Madrid',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Médica Especialista en Obstetricia y Ginecología',
         icon: 'tabler:school',
       },
     ]}
-    classes={{ container: 'max-w-3xl' }}
+    classes={{ container: 'max-w-3xl', items: { icon: 'text-[#EB9C9B] border-[#EB9C9B]' } }}
   />
 
   <!-- BlogLatestPost Widget **************** -->
-
   <BlogLatestPosts id="blog" title="Descubre más información en nuestro blog">
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>

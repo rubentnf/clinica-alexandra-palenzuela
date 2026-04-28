@@ -39,7 +39,7 @@ const team = [
   },
   {
     name: 'Nerea Peñalver Vargas',
-    role: 'Obstetricia y Matrona',
+    role: 'Obstetricia y Ginecología',
     image: {
       src: '~/assets/images/nerea.webp',
       alt: 'Nerea Peñalver Vargas',
@@ -52,7 +52,7 @@ const team = [
 <PageLayout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
   <HeroText
-    tagline="Conócenos"
+    tagline='<span style="color: #EB9C9B">Conócenos</span>'
     title="Nuestro Equipo"
     subtitle="Un equipo multidisciplinar comprometido con tu salud y bienestar integral."
   />
@@ -62,7 +62,7 @@ const team = [
       {
         team.map((member) => (
           <div class="flex flex-col items-center p-6 rounded-lg shadow-lg dark:shadow-none dark:border dark:border-slate-800 bg-white dark:bg-slate-900 transition hover:shadow-xl">
-            <div class="relative w-48 h-48 mb-6 overflow-hidden rounded-full border-4 border-primary">
+            <div class="relative w-48 h-48 mb-6 overflow-hidden rounded-full border-4" style="border-color: #EB9C9B">
               <Image
                 src={member.image.src}
                 alt={member.image.alt}

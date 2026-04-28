@@ -12,7 +12,7 @@ const metadata = {
 
 <PageLayout metadata={metadata}>
   <!-- Hero2 Widget ******************* -->
-  <Hero id="hero" title="Rita Morales" tagline="Nutricionista" />
+  <Hero id="hero" title="Rita Morales" tagline='<span style="color: #EB9C9B">Nutricionista</span>' />
 
   <!-- Content Widget **************** -->
   <Content
@@ -55,7 +55,7 @@ const metadata = {
         icon: 'tabler:school',
       },
     ]}
-    classes={{ container: 'max-w-3xl' }}
+    classes={{ container: 'max-w-3xl', items: { icon: 'text-[#EB9C9B] border-[#EB9C9B]' } }}
   />
 
   <!-- BlogLatestPost Widget **************** -->
