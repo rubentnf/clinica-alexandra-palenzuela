@@ -1,4 +1,3 @@
-import { getPermalink, getBlogPermalink } from './utils/permalinks';
 import { useTranslations, useTranslatedPath } from '~/i18n/utils';
 
 export const getHeaderData = (lang: 'es' | 'en' | 'de') => {
@@ -41,7 +40,7 @@ export const getFooterData = (lang: 'es' | 'en' | 'de') => {
   return {
     links: [
       {
-        title: lang === 'es' ? 'La Clínica' : lang === 'en' ? 'The Clinic' : 'Die Klinik',
+        title: t('footer.clinic'),
         links: [
           { text: t('nav.equipo'), href: p('/equipo') },
           { text: t('nav.blog'), href: p('/blog') },
@@ -50,8 +49,8 @@ export const getFooterData = (lang: 'es' | 'en' | 'de') => {
       {
         title: 'Legal',
         links: [
-          { text: lang === 'es' ? 'Términos de uso' : lang === 'en' ? 'Terms of Use' : 'Nutzungsbedingungen', href: p('/terms') },
-          { text: lang === 'es' ? 'Política de privacidad' : lang === 'en' ? 'Privacy Policy' : 'Datenschutzerklärung', href: p('/privacy') },
+          { text: t('footer.terms'), href: p('/terms') },
+          { text: t('footer.privacy'), href: p('/privacy') },
         ],
       },
     ],
@@ -61,7 +60,7 @@ export const getFooterData = (lang: 'es' | 'en' | 'de') => {
       { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/casadelaluztenerife/' },
     ],
     footNote: `
-      ${lang === 'es' ? 'Hecho con' : lang === 'en' ? 'Made with' : 'Hergestellt mit'} <span aria-hidden="true">❤️</span> ${lang === 'es' ? 'por' : lang === 'en' ? 'by' : 'von'} <a class="text-blue-600 underline dark:text-muted" href="https://www.linkedin.com/in/rubenafonsodev/" target="_blank"> Rubén Afonso</a> · ${lang === 'es' ? 'Todos los derechos reservados' : lang === 'en' ? 'All rights reserved' : 'Alle Rechte vorbehalten'}.
+      ${t('footer.madeBy')} <a class="text-blue-600 underline dark:text-muted" href="https://www.linkedin.com/in/rubenafonsodev/" target="_blank"> Rubén Afonso</a> · ${t('footer.allRights')}.
     `,
   };
 };

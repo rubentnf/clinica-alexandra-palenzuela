@@ -1,0 +1,107 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Content from '~/components/widgets/Content.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import { getHomeContent } from '~/data/home';
+
+export interface Props {
+  lang: 'es' | 'en' | 'de';
+}
+
+const { lang } = Astro.props;
+const content = getHomeContent(lang);
+
+const metadata = {
+  ...content.metadata,
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+  <Hero image={{ src: '~/assets/images/portada.svg', alt: content.hero.alt }}>
+    <Fragment slot="subtitle">
+      {content.hero.subtitle.map((paragraph, index) => (
+        <p class={index < content.hero.subtitle.length - 1 ? "mb-4" : ""}>{paragraph}</p>
+      ))}
+    </Fragment>
+  </Hero>
+
+  <!-- Ginecology Content Widget **************** -->
+  <Content
+    isReversed
+    items={content.ginecologia.items}
+    image={{
+      src: '~/assets/images/ginecologia.webp',
+      alt: content.ginecologia.alt,
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2 text-center sm:text-left">
+        {content.ginecologia.title}
+      </h3>
+    </Fragment>
+  </Content>
+
+  <!-- Nutrition Content Widget **************** -->
+  <Content
+    items={content.nutricion.items}
+    image={{
+      src: '~/assets/images/nutricion.webp',
+      alt: content.nutricion.alt,
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2 text-center sm:text-left">
+        {content.nutricion.title}
+      </h3>
+    </Fragment>
+  </Content>
+
+  <!-- Fisioterapia Content Widget **************** -->
+  <Content
+    isReversed
+    items={content.fisioterapia.items}
+    image={{
+      src: '~/assets/images/fisioterapia.webp',
+      alt: content.fisioterapia.alt,
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2 text-center sm:text-left">
+        {content.fisioterapia.title}
+      </h3>
+    </Fragment>
+  </Content>
+
+  <!-- Obstetricia Content Widget **************** -->
+  <Content
+    items={content.obstetricia.items}
+    image={{
+      src: '~/assets/images/obstetricia.webp',
+      alt: content.obstetricia.alt,
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2 text-center sm:text-left">
+        {content.obstetricia.title}
+      </h3>
+    </Fragment>
+  </Content>
+
+  <!-- Servicio de consulta online -->
+  <Hero
+    tagline=""
+    title={content.online.title}
+    subtitle={content.online.subtitle}
+    actions={[]}
+    image={{
+      src: '~/assets/images/consulta-online.webp',
+      alt: content.online.alt,
+    }}
+  />
+
+  <!-- BlogLatestPosts Widget ******* -->
+  <BlogLatestPosts title={content.blog.title} />
+</Layout>
