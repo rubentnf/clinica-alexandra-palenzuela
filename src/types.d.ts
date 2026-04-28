@@ -140,6 +140,7 @@ export interface Item {
   callToAction?: CallToAction;
   image?: Image;
   link?: string;
+  target?: string;
 }
 
 export interface Price {

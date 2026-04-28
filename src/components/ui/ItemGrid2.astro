@@ -32,7 +32,7 @@ const {
         containerClass
       )}
     >
-      {items.map(({ title, description, icon, callToAction, link, classes: itemClasses = {} }) => (
+      {items.map(({ title, description, icon, callToAction, link, target, classes: itemClasses = {} }) => (
         <div
           class={twMerge(
             'relative flex flex-col intersect-once intersect-quarter intersect-no-queue motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade',
@@ -40,7 +40,15 @@ const {
             itemClasses?.panel
           )}
         >
-          {link && <a href={link} class="absolute inset-0 z-10" aria-label={title} />}
+          {link && (
+            <a
+              href={link}
+              target={target || (link.startsWith('http') ? '_blank' : '_self')}
+              rel={target === '_blank' || link.startsWith('http') ? 'noopener noreferrer' : undefined}
+              class="absolute inset-0 z-10"
+              aria-label={title}
+            />
+          )}
           {(icon || defaultIcon) && (
             <Icon name={icon || defaultIcon} class={twMerge('mb-2 w-10 h-10', defaultIconClass, itemClasses?.icon)} />
           )}
