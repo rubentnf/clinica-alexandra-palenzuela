@@ -13,14 +13,17 @@ export const getHeaderData = (lang: 'es' | 'en' | 'de') => {
       {
         text: t('nav.equipo'),
         href: p('/equipo'),
+        'data-umami-event': 'Equipo button',
       },
       {
         text: t('nav.blog'),
         href: p('/blog'),
+        'data-umami-event': 'Blog button',
       },
       {
         text: t('nav.contacto'),
         href: p('/contacto'),
+        'data-umami-event': 'Contacto button',
       },
     ],
     actions: [
@@ -28,6 +31,7 @@ export const getHeaderData = (lang: 'es' | 'en' | 'de') => {
         text: t('nav.pedirCita'),
         href: 'https://portal.clinicaenlanube.com/clinicas/925/cita_peticiones/new',
         target: '_blank',
+        'data-umami-event': 'Pedir cita button',
       },
     ],
   };
@@ -56,7 +60,11 @@ export const getFooterData = (lang: 'es' | 'en' | 'de') => {
     ],
     secondaryLinks: [],
     socialLinks: [
-      { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/clinicaalexandragine/' },
+      {
+        ariaLabel: 'Instagram',
+        icon: 'tabler:brand-instagram',
+        href: 'https://www.instagram.com/clinicaalexandragine/',
+      },
       { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/casadelaluztenerife/' },
     ],
     footNote: `
