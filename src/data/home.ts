@@ -1,6 +1,15 @@
 export const getHomeContent = (lang: 'es' | 'en' | 'de') => {
   const content = {
     es: {
+      specialtiesTitle: 'Nuestras Especialidades',
+      teamButton: 'Conoce al equipo',
+      team: {
+        title: 'Un equipo dedicado a tu bienestar',
+        subtitle: 'Ciencia, innovación y un enfoque humano en cada etapa de tu vida.',
+        description:
+          'En nuestra clínica, entendemos que la salud no es solo la ausencia de enfermedad. Nuestro equipo multidisciplinar trabaja de forma coordinada para ofrecerte soluciones integrales.',
+        specialties: 'Ginecología · Nutrición · Fisioterapia · Obstetricia',
+      },
       metadata: {
         title: 'Clínica Alexandra Palenzuela — Ginecología, Nutrición y Fisioterapia',
       },
@@ -126,6 +135,15 @@ export const getHomeContent = (lang: 'es' | 'en' | 'de') => {
       },
     },
     en: {
+      specialtiesTitle: 'Our Specialties',
+      teamButton: 'Meet our team',
+      team: {
+        title: 'A team dedicated to your well-being',
+        subtitle: 'Science, innovation and a human approach in every stage of your life.',
+        description:
+          'In our clinic, we understand that health is not just the absence of disease. Our multidisciplinary team works in a coordinated way to offer you integral solutions.',
+        specialties: 'Gynecology · Nutrition · Physiotherapy · Obstetrics',
+      },
       metadata: {
         title: 'Alexandra Palenzuela Clinic — Gynecology, Nutrition and Physiotherapy',
       },
@@ -251,6 +269,15 @@ export const getHomeContent = (lang: 'es' | 'en' | 'de') => {
       },
     },
     de: {
+      specialtiesTitle: 'Unsere Fachgebiete',
+      teamButton: 'Lerne das team kennen',
+      team: {
+        title: 'Ein Team, das sich Ihrem Wohlbefinden widmet',
+        subtitle: 'Wissenschaft, Innovation und ein menschlicher Ansatz in jeder Phase Ihres Lebens.',
+        description:
+          'In unserer Klinik verstehen wir Gesundheit nicht nur als Abwesenheit von Krankheit. Unser multidisziplinäres Team arbeitet koordiniert zusammen, um Ihnen ganzheitliche Lösungen anzubieten.',
+        specialties: 'Gynäkologie · Ernährung · Physiotherapie · Geburtshilfe',
+      },
       metadata: {
         title: 'Klinik Alexandra Palenzuela — Gynäkologie, Ernährung und Physiotherapie',
       },

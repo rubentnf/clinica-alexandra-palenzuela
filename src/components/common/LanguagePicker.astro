@@ -20,13 +20,16 @@ const lang = getLangFromUrl(Astro.url);
   </button>
 
   <div
-    class="absolute right-0 z-50 mt-2 w-32 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-slate-800 hidden group-hover:block"
+    class="absolute right-0 z-50 pt-2 w-32 hidden group-hover:block"
     role="menu"
     aria-orientation="vertical"
     aria-labelledby="language-menu-button"
     tabindex="-1"
   >
-    <div class="py-1" role="none">
+    <div
+      class="origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-slate-800 py-1"
+      role="none"
+    >
       {
         Object.entries(languages).map(([code, label]) => (
           <a
