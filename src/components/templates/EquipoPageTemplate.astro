@@ -31,8 +31,11 @@ const content = getEquipoContent(lang);
                 src={member.image.src}
                 alt={member.image.alt}
                 class="object-cover w-full h-full"
-                width={200}
-                height={200}
+                width={400}
+                height={400}
+                widths={[200, 400, 600]}
+                sizes="192px"
+                layout="responsive"
               />
             </div>
             <h3 class="text-xl font-bold mb-2 text-center">{member.name}</h3>
