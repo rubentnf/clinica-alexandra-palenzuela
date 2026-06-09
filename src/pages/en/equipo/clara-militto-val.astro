@@ -1,0 +1,91 @@
+---
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import Content from '~/components/widgets/Content.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import PageLayout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Clara Militto Val - Alexandra Palenzuela Clinic',
+};
+---
+
+<PageLayout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+  <Hero id="hero" title="Clara Militto Val" tagline='<span style="color: #EB9C9B">Physiotherapist</span>' />
+
+  <!-- Content Widget **************** -->
+  <Content
+    id="about"
+    image={{
+      src: '~/assets/images/clara.webp',
+      alt: 'Clara Militto Val Image',
+      loading: 'eager',
+    }}
+  >
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
+
+      <p class="mb-4">
+        Physiotherapist committed to the recovery and well-being of her patients, specialized in the assessment and
+        personalized treatment of various pathologies.
+      </p>
+
+      <p class="mb-4">
+        She applies advanced techniques of manual therapy, therapeutic exercise, and the NESA service, aimed at
+        optimizing results, reducing pain, and improving quality of life through movement.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+  <Steps
+    id="experience"
+    title="Work Experience"
+    items={[
+      {
+        title: 'Home-based Physiotherapy Service',
+        description: `We offer home-based physiotherapy services to provide comfort and personalized care.`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title: 'LAE Physiotherapy Clinic',
+        description: `In our physiotherapy clinic, we are dedicated to improving health and well-being.`,
+        icon: 'tabler:briefcase',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl', items: { icon: 'text-[#EB9C9B] border-[#EB9C9B]' } }}
+  />
+
+  <!-- Steps Widget ****************** -->
+  <Steps
+    id="education"
+    title="Education"
+    items={[
+      {
+        title: 'Internal training LAE <br /> <span class="font-normal">LAE Physiotherapy Clinic</span>',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Monographics',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Degree in Physiotherapy <br /> <span class="font-normal">University of La Laguna</span>',
+        icon: 'tabler:school',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl', items: { icon: 'text-[#EB9C9B] border-[#EB9C9B]' } }}
+  />
+
+  <!-- BlogLatestPost Widget **************** -->
+  <BlogLatestPosts id="blog" title="Discover more information on our blog">
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</PageLayout>

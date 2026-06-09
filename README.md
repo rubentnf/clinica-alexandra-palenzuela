@@ -13,7 +13,7 @@
 - ✅ **Image Optimization** (using new **Astro Assets** and **Unpic** for Universal image CDN).
 - ✅ Generation of **project sitemap** based on your routes.
 - ✅ **Open Graph tags** for social media sharing.
-- ✅ **Analytics** built-in Google Analytics, and Splitbee integration.
+- ✅ **Analytics** built-in Umami, and Vercel Speed Insights integration.
 
 <br>
 
@@ -231,8 +231,8 @@ apps:
 
 analytics:
   vendors:
-    googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
+    umami:
+      id: null # or some-id
 
 ui:
   theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"

@@ -1,0 +1,79 @@
+---
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import Content from '~/components/widgets/Content.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import PageLayout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Rita Morales Hernández - Klinik Alexandra Palenzuela',
+};
+---
+
+<PageLayout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+  <Hero id="hero" title="Rita Morales" tagline='<span style="color: #EB9C9B">Ernährungsberaterin</span>' />
+
+  <!-- Content Widget **************** -->
+  <Content
+    id="about"
+    image={{
+      src: '~/assets/images/rita.webp',
+      alt: 'Rita Morales Bild',
+      loading: 'eager',
+    }}
+  >
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Über mich</h2>
+
+      <p class="mb-4">
+        Spezialistin für menschliche Ernährung und Diätetik sowie für sportliches Training und Ernährung, konzentriert
+        auf die Verbesserung der Gesundheit und Leistung durch ausgewogene, personalisierte und nachhaltige Ernährung.
+      </p>
+      <p class="mb-4">
+        Ihre Philosophie basiert auf einer Ernährungsberatung, die vollständig auf jeden Patienten zugeschnitten ist und
+        dessen Bedürfnisse, Lebensstil und Ziele berücksichtigt. Über strenge Richtlinien hinaus setzt sie auf
+        Ernährungserziehung und hilft jedem Menschen zu verstehen, dass es nicht darum geht, vorübergehenden Diäten zu
+        folgen, sondern dauerhafte gesunde Gewohnheiten zu erwerben, die zu einer optimalen Gesundheit während des
+        gesamten Lebens führen.
+      </p>
+
+      <p class="mb-4">
+        Sie begleitet ihre Patienten in jeder Phase und bietet enge und kontinuierliche Unterstützung, um echte,
+        nachhaltige Veränderungen zu erreichen, die auf ihr Wohlbefinden abgestimmt sind.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+  <Steps
+    id="education"
+    title="Ausbildung"
+    items={[
+      {
+        title:
+          'Master-Abschluss in Sporttraining und Ernährung <br /> <span class="font-normal">Europäische Universität Madrid</span>',
+        description: ``,
+        icon: 'tabler:school',
+      },
+      {
+        title:
+          'Studium der menschlichen Ernährung und Diätetik <br /> <span class="font-normal">Universität Fernando Pessoa-Canarias (UFP-C)</span>',
+        description: ``,
+        icon: 'tabler:school',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl', items: { icon: 'text-[#EB9C9B] border-[#EB9C9B]' } }}
+  />
+
+  <!-- BlogLatestPost Widget **************** -->
+  <BlogLatestPosts id="blog" title="Entdecken Sie weitere Informationen in unserem Blog">
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</PageLayout>

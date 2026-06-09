@@ -1,0 +1,119 @@
+---
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import Content from '~/components/widgets/Content.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import PageLayout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Alexandra Palenzuela - Klinik Alexandra Palenzuela',
+};
+---
+
+<PageLayout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+  <Hero id="hero" title="Alexandra Palenzuela" tagline='<span style="color: #EB9C9B">Gynäkologie und Integrative Medizinerin</span>' />
+
+  <!-- Content Widget **************** -->
+  <Content
+    id="about"
+    image={{
+      src: '~/assets/images/alexandra.webp',
+      alt: 'Alexandra Palenzuela Bild',
+      loading: 'eager',
+    }}
+  >
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Über mich</h2>
+
+      <p>
+        Schon in jungen Jahren, etwa im Alter von 6 Jahren, erwachte in ihr die Berufung zu heilen und der Wunsch, Menschen dabei zu helfen, so gesund wie möglich zu bleiben.
+      </p>
+      <br />
+      <p>
+        Im Laufe der Jahre führte sie diese Neigung dazu, ein Medizinstudium an der Universität von La Laguna zu absolvieren. Während ihrer Praktika als Studentin entschied sie sich nach ihrer ersten Entbindung, sich der Praxis der Gynäkologie und Geburtshilfe zu widmen.
+      </p>
+      <br />
+      <p>
+        Derzeit arbeitet sie als Gynäkologin und integrative Medizinerin bei Casa de la Luz – Salud Integrativa zusammen mit einem multidisziplinären Team von Fachleuten und ist die ärztliche Leiterin dieses Zentrums.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+  <Steps
+    id="experience"
+    title="Berufserfahrung"
+    items={[
+      {
+        title:
+          'Assistenzärztin <br /> <span class="font-normal">Universitätskrankenhaus Nuestra Señora de La Candelaria</span>',
+        description: ``,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Dienst für gynäkologische Onkologie <br /> <span class="font-normal">Universitätskrankenhaus Bellvitge</span>',
+        description: ``,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Komitee für gynäkologische Onkologie <br /> <span class="font-normal">Katalanisches Institut für Onkologie (ICO)</span>',
+        description: ``,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Kontrolle von Schwangerschaftsdiabetes <br /> <span class="font-normal">Krankenhaus Vall d`Hebron</span>',
+        description: ``,
+        icon: 'tabler:briefcase',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl', items: { icon: 'text-[#EB9C9B] border-[#EB9C9B]' } }}
+  />
+
+  <!-- Steps Widget ****************** -->
+  <Steps
+    id="education"
+    title="Ausbildung"
+    items={[
+      {
+        title: `Mitglied mehrerer wissenschaftlicher Gesellschaften <br /> <span class="font-normal">SEGO (Spanische Gesellschaft für Gynäkologie und Geburtshilfe) - SENMO (Spanische Gesellschaft für Ernährung und Orthomolekulare Medizin) - SESMI (Spanische Gesellschaft für Integrative Gesundheit und Medizin) - AEMI (Spanische Gesellschaft für Mikroimmuntherapie)</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Ausbildung in Mikroimmuntherapie <br /> <span class="font-normal">Dr. Josepa Rigau</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Ausbildung in Integrativer Onkologie (200 Unterrichtsstunden) <br /> <span class="font-normal">Onmints</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Master in Pädagogik, Sexualtherapie und Gender <br /> <span class="font-normal">Universität von La Laguna</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Fachärztin für Geburtshilfe und Gynäkologie <br /> <span class="font-normal">Generaldirektion für Universitäten</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Studium der Medizin und Chirurgie <br /> <span class="font-normal">Universität von La Laguna</span>`,
+        icon: 'tabler:school',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl', items: { icon: 'text-[#EB9C9B] border-[#EB9C9B]' } }}
+  />
+
+  <!-- BlogLatestPost Widget **************** -->
+  <BlogLatestPosts id="blog" title="Entdecken Sie weitere Informationen in unserem Blog">
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</PageLayout>

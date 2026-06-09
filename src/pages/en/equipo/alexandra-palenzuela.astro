@@ -1,0 +1,119 @@
+---
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import Content from '~/components/widgets/Content.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import PageLayout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Alexandra Palenzuela - Alexandra Palenzuela Clinic',
+};
+---
+
+<PageLayout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+  <Hero id="hero" title="Alexandra Palenzuela" tagline='<span style="color: #EB9C9B">Gynecology and Integrative Physician</span>' />
+
+  <!-- Content Widget **************** -->
+  <Content
+    id="about"
+    image={{
+      src: '~/assets/images/alexandra.webp',
+      alt: 'Alexandra Palenzuela Image',
+      loading: 'eager',
+    }}
+  >
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
+
+      <p>
+        From a very young age, around 6 years old, the vocation to heal and the desire to help people stay as healthy as possible awakened in her.
+      </p>
+      <br />
+      <p>
+        Over the years, this inclination led her to pursue medical studies at the University of La Laguna. During her student internships, upon seeing her first delivery, she decided to dedicate herself to the practice of Gynecology and Obstetrics.
+      </p>
+      <br />
+      <p>
+        She currently works as a Gynecologist and Integrative Physician at Casa de la Luz – Salud Integrativa, alongside a multidisciplinary team of professionals, serving as the Medical Director of the center.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+  <Steps
+    id="experience"
+    title="Work Experience"
+    items={[
+      {
+        title:
+          'Resident Physician <br /> <span class="font-normal">University Hospital Nuestra Señora de La Candelaria</span>',
+        description: ``,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Gynecological Oncology Service <br /> <span class="font-normal">University Hospital of Bellvitge</span>',
+        description: ``,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Gynecological Oncology Committee <br /> <span class="font-normal">Catalan Institute of Oncology (ICO)</span>',
+        description: ``,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Gestational Diabetes Control <br /> <span class="font-normal">Vall d`Hebron Hospital</span>',
+        description: ``,
+        icon: 'tabler:briefcase',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl', items: { icon: 'text-[#EB9C9B] border-[#EB9C9B]' } }}
+  />
+
+  <!-- Steps Widget ****************** -->
+  <Steps
+    id="education"
+    title="Education"
+    items={[
+      {
+        title: `Member of several scientific societies <br /> <span class="font-normal">SEGO (Spanish Society of Gynecology and Obstetrics) - SENMO (Spanish Society of Nutrition and Orthomolecular Medicine) - SESMI (Spanish Society of Integrative Health and Medicine) - AEMI (Spanish Society of Micro-immunotherapy)</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Training in Micro-immunotherapy <br /> <span class="font-normal">Dr. Josepa Rigau</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Training in Integrative Oncology (200 hours) <br /> <span class="font-normal">Onmints</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Master in Education, Sexual Therapy and Gender <br /> <span class="font-normal">University of La Laguna</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Medical Specialist in Obstetrics and Gynecology <br /> <span class="font-normal">General Directorate of Universities</span>`,
+        icon: 'tabler:school',
+      },
+      {
+        title: `Bachelor of Medicine and Surgery <br /> <span class="font-normal">University of La Laguna</span>`,
+        icon: 'tabler:school',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl', items: { icon: 'text-[#EB9C9B] border-[#EB9C9B]' } }}
+  />
+
+  <!-- BlogLatestPost Widget **************** -->
+  <BlogLatestPosts id="blog" title="Discover more information on our blog">
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</PageLayout>

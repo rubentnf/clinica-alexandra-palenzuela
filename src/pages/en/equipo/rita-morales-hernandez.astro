@@ -1,0 +1,78 @@
+---
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import Content from '~/components/widgets/Content.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import PageLayout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Rita Morales Hernández - Alexandra Palenzuela Clinic',
+};
+---
+
+<PageLayout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+  <Hero id="hero" title="Rita Morales" tagline='<span style="color: #EB9C9B">Nutritionist</span>' />
+
+  <!-- Content Widget **************** -->
+  <Content
+    id="about"
+    image={{
+      src: '~/assets/images/rita.webp',
+      alt: 'Rita Morales Image',
+      loading: 'eager',
+    }}
+  >
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
+
+      <p class="mb-4">
+        Specialist in Human Nutrition and Dietetics, as well as in Sports Training and Nutrition, focused on improving
+        health and performance through balanced, personalized, and sustainable nutrition.
+      </p>
+      <p class="mb-4">
+        Her philosophy is based on nutritional counseling fully adapted to each patient, understanding their needs,
+        lifestyle, and goals. Beyond strict guidelines, she is committed to nutritional education, helping each person
+        understand that it is not about following temporary diets, but about acquiring lasting healthy habits that lead
+        to optimal health throughout life.
+      </p>
+
+      <p class="mb-4">
+        She accompanies her patients at every stage, offering close and continuous support to achieve real, sustainable
+        changes aligned with their well-being.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+  <Steps
+    id="education"
+    title="Education"
+    items={[
+      {
+        title:
+          'University Master\'s Degree in Sports Training and Nutrition <br /> <span class="font-normal">European University of Madrid</span>',
+        description: ``,
+        icon: 'tabler:school',
+      },
+      {
+        title:
+          'Graduate in Human Nutrition and Dietetics <br /> <span class="font-normal">Fernando Pessoa-Canarias University (UFP-C)</span>',
+        description: ``,
+        icon: 'tabler:school',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl', items: { icon: 'text-[#EB9C9B] border-[#EB9C9B]' } }}
+  />
+
+  <!-- BlogLatestPost Widget **************** -->
+  <BlogLatestPosts id="blog" title="Discover more information on our blog">
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</PageLayout>

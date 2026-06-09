@@ -1,0 +1,78 @@
+---
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import Content from '~/components/widgets/Content.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import PageLayout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Nerea Peñalver Vargas - Klinik Alexandra Palenzuela',
+};
+---
+
+<PageLayout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+  <Hero id="hero" title="Nerea Peñalver Vargas" tagline='<span style="color: #EB9C9B">Geburtshilfe und Gynäkologie</span>' />
+
+  <!-- Content Widget **************** -->
+  <Content
+    id="about"
+    image={{
+      src: '~/assets/images/nerea.webp',
+      alt: 'Nerea Peñalver Vargas Bild',
+      loading: 'eager',
+    }}
+  >
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Über mich</h2>
+
+      <p>
+        Fachärztin für Geburtshilfe und Gynäkologie mit einer umfassenden Spezialisierung auf die Schwangerschaftsbegleitung und pränatale Beratung. Ihr Engagement gilt der medizinischen Exzellenz auf der Grundlage wissenschaftlicher Erkenntnisse und dem Respekt vor den Entscheidungen der Frauen in jeder Phase ihrer Mutterschaft.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+  <Steps
+    id="experience"
+    title="Berufserfahrung"
+    items={[
+      {
+        title:
+          'Fachärztin für Geburtshilfe und Gynäkologie <br /> <span class="font-normal">Universitätskrankenhaus Nuestra Señora de La Candelaria</span>',
+        description: 'Seit Juli 2021 bis heute. Spezialisiert auf Schwangerschaftsbegleitung und pränatale Beratung.',
+        icon: 'tabler:briefcase',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl', items: { icon: 'text-[#EB9C9B] border-[#EB9C9B]' } }}
+  />
+
+  <!-- Steps Widget ****************** -->
+  <Steps
+    id="education"
+    title="Ausbildung"
+    items={[
+      {
+        title: 'Studium der Medizin',
+        description: 'Universität Rey Juan Carlos in Madrid',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Fachärztin für Geburtshilfe und Gynäkologie',
+        icon: 'tabler:school',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl', items: { icon: 'text-[#EB9C9B] border-[#EB9C9B]' } }}
+  />
+
+  <!-- BlogLatestPost Widget **************** -->
+  <BlogLatestPosts id="blog" title="Entdecken Sie weitere Informationen in unserem Blog">
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</PageLayout>

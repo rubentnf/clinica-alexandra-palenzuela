@@ -1,0 +1,182 @@
+---
+import Headline from '~/components/ui/Headline.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Content from '~/components/widgets/Content.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import Image from '~/components/common/Image.astro';
+import { useTranslatedPath } from '~/i18n/utils';
+import { getHomeContent } from '~/data/home';
+
+export interface Props {
+  lang: 'es' | 'en' | 'de';
+}
+
+const { lang } = Astro.props;
+const content = getHomeContent(lang);
+const p = useTranslatedPath(lang);
+
+const metadata = {
+  ...content.metadata,
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+  <Hero image={{ src: '~/assets/images/portada.svg', alt: content.hero.alt }}>
+    <Fragment slot="subtitle">
+      {
+        content.hero.subtitle.map((paragraph, index) => (
+          <p class={index < content.hero.subtitle.length - 1 ? 'mb-4' : ''}>{paragraph}</p>
+        ))
+      }
+    </Fragment>
+  </Hero>
+
+  <Content>
+    <Fragment slot="content">
+      <div class="space-y-4 md:text-left text-center">
+        <h2 class="text-center md:text-left text-3xl font-bold tracking-tight dark:text-white sm:text-4xl mb-4">
+          {content.team.title}
+        </h2>
+        <p class="text-xl text-muted dark:text-slate-300 mb-6">
+          {content.team.subtitle}
+        </p>
+        <p class="text-lg text-muted dark:text-slate-400 mt-6">
+          {content.team.description}
+        </p>
+        <div class="flex items-center justify-center md:justify-start gap-4 text-[#EB9C9B] font-semibold">
+          <span>{content.team.specialties}</span>
+        </div>
+      </div>
+    </Fragment>
+    <Fragment slot="image">
+      <div class="relative m-auto max-w-4xl">
+        <Image
+          class="mx-auto w-full rounded-lg shadow-none"
+          width={1024}
+          height={576}
+          src="~/assets/images/equipo.jpeg"
+          alt="Equipo Clinica Alexandra Palenzuela"
+        />
+        <div class="mt-6 flex justify-center">
+          <a
+            href={p('/equipo')}
+            class="group text-[#EB9C9B] hover:text-[#D88A89] font-bold inline-flex items-center gap-2 transition-colors duration-200 text-lg"
+          >
+            {content.teamButton}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M5 12l14 0"></path>
+              <path d="M13 18l6 -6"></path>
+              <path d="M13 6l6 6"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </Fragment>
+  </Content>
+
+  <Headline
+    title={content.specialtiesTitle}
+    classes={{
+      container: 'max-w-3xl mt-8 sm:mt-12 lg:mt-16 mb-8 md:mb-12',
+    }}
+  />
+
+  <!-- Ginecology Content Widget **************** -->
+  <Content
+    isReversed
+    items={content.ginecologia.items}
+    classes={{ container: 'py-8 md:py-12' }}
+    image={{
+      src: '~/assets/images/ginecologia.webp',
+      alt: content.ginecologia.alt,
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2 text-center sm:text-left">
+        {content.ginecologia.title}
+      </h3>
+    </Fragment>
+  </Content>
+
+  <!-- Nutrition Content Widget **************** -->
+  <Content
+    items={content.nutricion.items}
+    classes={{ container: 'py-8 md:py-12' }}
+    image={{
+      src: '~/assets/images/nutricion.webp',
+      alt: content.nutricion.alt,
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2 text-center sm:text-left">
+        {content.nutricion.title}
+      </h3>
+    </Fragment>
+  </Content>
+
+  <!-- Fisioterapia Content Widget **************** -->
+  <Content
+    isReversed
+    items={content.fisioterapia.items}
+    classes={{ container: 'py-8 md:py-12' }}
+    image={{
+      src: '~/assets/images/fisioterapia.webp',
+      alt: content.fisioterapia.alt,
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2 text-center sm:text-left">
+        {content.fisioterapia.title}
+      </h3>
+    </Fragment>
+  </Content>
+
+  <!-- Obstetricia Content Widget **************** -->
+  <Content
+    items={content.obstetricia.items}
+    classes={{ container: 'py-8 md:py-12' }}
+    image={{
+      src: '~/assets/images/obstetricia.webp',
+      alt: content.obstetricia.alt,
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2 text-center sm:text-left">
+        {content.obstetricia.title}
+      </h3>
+    </Fragment>
+  </Content>
+
+  <!-- Servicio de consulta online -->
+  <Hero
+    tagline=""
+    title={content.online.title}
+    actions={[]}
+    image={{
+      src: '~/assets/images/consulta-online.webp',
+      alt: content.online.alt,
+    }}
+  >
+    <Fragment slot="subtitle">
+      <div class="mt-8 md:mt-12">
+        <Fragment set:html={content.online.subtitle} />
+      </div>
+    </Fragment>
+  </Hero>
+
+  <!-- BlogLatestPosts Widget ******* -->
+  <BlogLatestPosts title={content.blog.title} />
+</Layout>

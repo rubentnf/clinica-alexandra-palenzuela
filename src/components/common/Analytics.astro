@@ -1,13 +1,4 @@
 ---
-import { GoogleAnalytics } from '@astrolib/analytics';
-import { ANALYTICS } from 'astrowind:config';
 ---
 
-{
-  ANALYTICS?.vendors?.googleAnalytics?.id ? (
-    <GoogleAnalytics
-      id={String(ANALYTICS.vendors.googleAnalytics.id)}
-      partytown={ANALYTICS?.vendors?.googleAnalytics?.partytown}
-    />
-  ) : null
-}
+<script defer src="https://cloud.umami.is/script.js" data-website-id="ebf4c50c-48f7-4a38-bb4c-9856c204cf2b"></script>

@@ -2,8 +2,11 @@
 import Layout from '~/layouts/Layout.astro';
 import Header from '~/components/widgets/Header.astro';
 import Footer from '~/components/widgets/Footer.astro';
+import Button from '~/components/ui/Button.astro';
+import Breadcrumbs from '~/components/common/Breadcrumbs.astro';
 
-import { headerData, footerData } from '~/navigation';
+import { getHeaderData, getFooterData } from '~/navigation';
+import { getLangFromUrl } from '~/i18n/utils';
 
 import type { MetaData } from '~/types';
 
@@ -12,12 +15,29 @@ export interface Props {
 }
 
 const { metadata } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const headerData = getHeaderData(lang);
+const footerData = getFooterData(lang);
 ---
 
 <Layout metadata={metadata}>
   <slot name="header">
     <Header {...headerData} isSticky showToggleTheme />
   </slot>
+  {
+    !['/', '/en', '/de', '/en/', '/de/'].includes(Astro.url.pathname) && (
+      <div class="relative z-10 max-w-7xl mx-auto w-full px-4 md:px-6 pt-4">
+        <Breadcrumbs />
+      </div>
+    )
+  }
+  {
+    headerData?.actions?.length > 0 && (
+      <div class="md:hidden flex justify-center py-3 px-4 bg-page">
+        <Button {...headerData.actions[0]} class="w-full font-semibold" />
+      </div>
+    )
+  }
   <main>
     <slot />
   </main>

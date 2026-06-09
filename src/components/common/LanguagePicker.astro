@@ -1,0 +1,50 @@
+---
+import { languages } from '~/i18n/ui';
+import { getLangFromUrl } from '~/i18n/utils';
+import { Icon } from 'astro-icon/components';
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<div class="relative inline-block text-left group">
+  <button
+    type="button"
+    class="inline-flex items-center justify-center px-2 py-2 text-sm font-medium text-gray-700 bg-transparent hover:text-primary focus:outline-none dark:text-gray-300 dark:hover:text-white"
+    id="language-menu-button"
+    aria-expanded="false"
+    aria-haspopup="true"
+  >
+    <Icon name="tabler:world" class="w-5 h-5 mr-1" />
+    <span class="uppercase">{lang}</span>
+    <Icon name="tabler:chevron-down" class="w-4 h-4 ml-1" />
+  </button>
+
+  <div
+    class="absolute right-0 z-50 pt-2 w-32 hidden group-hover:block"
+    role="menu"
+    aria-orientation="vertical"
+    aria-labelledby="language-menu-button"
+    tabindex="-1"
+  >
+    <div
+      class="origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-slate-800 py-1"
+      role="none"
+    >
+      {
+        Object.entries(languages).map(([code, label]) => (
+          <a
+            href={code === 'es' ? '/' : `/${code}`}
+            class:list={[
+              'block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary dark:text-gray-300 dark:hover:bg-slate-700 dark:hover:text-white',
+              { 'font-bold text-primary': lang === code },
+            ]}
+            role="menuitem"
+            tabindex="-1"
+          >
+            {label}
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</div>
